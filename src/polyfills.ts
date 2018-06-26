@@ -78,3 +78,12 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+declare global {
+  interface Window {
+    xdox_OnCustomClick: () => void;
+    xdox_OnTabShown: () => void;
+    xdox_OnInterviewLoaded: () => void;
+    xdox_OnAssembleClick: () => void;
+  }
+}
