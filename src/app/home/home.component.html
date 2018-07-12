@@ -1,0 +1,51 @@
+<div class="container">
+	<h2>What is an XpressDox integrated interview?</h2>
+
+	<div class="card">
+		<div class="card-content">
+			<p class="flow-text left-align">
+				In order to integrate an XpressDox interview you will need:
+			</p>
+			<ol class="flow-text left-align browser-default">
+				<li>jQuery</li>
+				<li>The XpressDoxLoader script</li>
+				<li>The HTML that defines the interview</li>
+			</ol>
+		</div>
+
+		<div class="card-tabs ">
+			<ul class="tabs tabs-fixed-width">
+				<li class="tab"><a class="active" href="#test4">1.</a></li>
+				<li class="tab"><a href="#test5">2.</a></li>
+				<li class="tab"><a href="#test6">3.</a></li>
+			</ul>
+		</div>
+
+		<div class="card-content grey lighten-4">
+			<div id="test4">
+				<div>
+					<p class="flow-text left-align">
+						If you would like to use exactly the same version of jQuery that we are currently using then you can include the following in your index.html
+					</p>
+					<prism-block [code]="codeblock1" [language]="'markup'">
+					</prism-block>
+					<p class="flow-text left-align">
+						If you are already using jQuery and it is above version 2.0 then you need to include the following jQuery migrate script in order for our library yo be compatable with the version of jQuery that you are using.
+					</p>
+					<prism-block [code]="codeblock2" [language]="'markup'">
+					</prism-block>
+				</div>
+			</div>
+
+			<div id="test5">
+				<prism-block [code]="codeblock3" [language]="'markup'">
+				</prism-block>
+			</div>
+
+			<div id="test6">
+				<prism-block [code]="codeblock4" [language]="'markup'">
+				</prism-block>
+			</div>
+		</div>
+	</div>
+</div>

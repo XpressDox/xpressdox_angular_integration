@@ -1,14 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div>
-  <h1 style="text-align:center">
-    Xpressdox Angular Demo!
-  </h1>
-  <nav>
-    <a routerLink="/template_one" routerLinkActive="active"><button mat-button>Template One</button></a>
-    <a routerLink="/template_two"><button mat-button>Template Two</button></a>
-    <a routerLink="/tree"><button mat-button>Tree</button></a>
-  </nav>
-  <router-outlet></router-outlet>
+	<nav class="red darken-4">
+		<div class="nav-wrapper">
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li>
+					<a routerLink="/" routerLinkActive="active">Home</a>
+				</li>
+				<li>
+					<a routerLink="/simple_template">Simple Template</a>
+				</li>
+				<li>
+					<a routerLink="/tree">Tree</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<router-outlet></router-outlet>
 </div>
 

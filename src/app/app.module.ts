@@ -14,8 +14,20 @@ import {
   MatTreeModule,
   MatIconModule,
 } from '@angular/material';
+import { HomeComponent } from './home/home.component';
+import { SimpleTemplateComponent } from './simple-template/simple-template.component';
+
+/* Import prism core */
+import 'prismjs/prism';
+ 
+/* Import the language you need to highlight */
+import 'prismjs/components/prism-typescript';
+ 
+import { PrismComponent } from 'angular-prism';
 
 const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'simple_template', component: SimpleTemplateComponent },
   { path: 'template_one', component: TemplateOneComponent },
   { path: 'template_two', component: TemplateTwoComponent },
   { path: 'tree', component: TreeComponent },
@@ -29,7 +41,10 @@ const appRoutes: Routes = [
     TemplateTwoComponent,
     TreeComponent,
     XpressdoxInterviewComponent,
-    XpressdoxInterviewDirective
+    XpressdoxInterviewDirective,
+    HomeComponent,
+    SimpleTemplateComponent,
+    PrismComponent
   ],
   entryComponents: [XpressdoxInterviewComponent],
   imports: [
